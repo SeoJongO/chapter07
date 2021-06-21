@@ -22,7 +22,7 @@ public class Client {
 		
 		
 		System.out.println("[서버에 연결을 요청합니다.]");
-		socket.connect(new InetSocketAddress("192.168.0.149", 10001));
+		socket.connect(new InetSocketAddress("3.36.134.188", 10001));
 		
 		System.out.println("[서버에 연결되었습니다.]");
 		
@@ -49,7 +49,7 @@ public class Client {
 			}
 			
 			//보내기
-			bw.write(str);
+			bw.write("(서종오)" + str);
 			bw.newLine();
 			bw.flush();
 			
